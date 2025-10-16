@@ -1,0 +1,19 @@
+1. Si quisiera cambiar la aplicación para que funcione con una base de datos real en
+lugar de una ArrayList, ¿qué capa se modificaría principalmente? 
+R// La capa de datos es la responsable de acceder, almacenar y recuperar la información, por lo tanto, 
+si se desea conectar la aplicación con una base de datos se modificaría principalmente la capa de datos 
+para conectar la aplicación con una base de datos real.
+
+2. Si quisiera cambiar la aplicación para usar una interfaz gráfica (GUI) creada en
+otro tipo de lenguaje más elaborado ¿qué capa se modificaría principalmente y que
+reutilizar de lo implementado?
+R// La capa que se modificaría principalmente sería la capa de vista. Se puede reutilizar la lógica del Controller y
+los modelos de datos implementados, conectando a nueva interfaz a esas mismas clases y métodos.
+
+3. ¿Podría el Modelo llamar directamente a un método de la Vista para mostrar un
+error? ¿Por qué sí o por qué no? 
+R// No, el Modelo no deberia llamar directamente a un método de la Vista para mostrar un
+error, porque en el MVC el Modelo se encarga exclusivamente de la lógica de datos, mientras que la Vista se encarga
+de la interfaz gráfica y la presentación. El controlador es el que actua como intermediario recibe los errores del modelo
+y decide cómo notificarlos a la vista .
+

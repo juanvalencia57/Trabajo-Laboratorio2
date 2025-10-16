@@ -1,0 +1,22 @@
+Main: Inicializa el modelo, la vista y el controlador del puzzle (arquitectura MVC).
+Preparar la ventana y los menús de la interfaz gráfica.
+Gestionar las acciones de los botones y menús para interactuar con el usuario.
+Mostrar la ventana y dejar la aplicación lista para usarse.
+
+Controller: Carga una imagen y prepara el puzzle.
+Reinicia el puzzle.
+Formatea datos y permite cargar una nueva imagen.
+Saca afuera del tablero las piezas no fijas.
+
+MesaView: Define el área del tablero, establece el color de fondo y tamaño y añade listeners para manejar eventos de mouse y zoom.
+Interacciones con el mouse: doble clic en el tablero para mostrar la imagen, zoom, clic sobre la imagen original, arrastrar piezas.
+Muestra un dialogo cuando se completa el puzzle.
+Muestra la imagen ampliada. 
+
+PuzzleModel: Representa el modelo en la arquitectura MVC, es la clase que almacena toda la 
+información esencial del puzzle: la imagen original, la estructura de filas y columnas, el tamaño de las piezas y
+la lista de piezas.
+
+PuzzlePieceModel: Se encarga de almacenar toda la información relevante de cada pieza, tanto gráfica
+como su estado, si esta fija o no y su posición dentro del juego.
+
