@@ -1,0 +1,16 @@
+a. ¿Qué pasaría si no hubiéramos usado la interfaz SistemaTarifario? 
+¿Cuántas funciones procesarViaje habríamos tenido que crear?
+R// Sin la interfaz, se tendria que haber creado tantas funciones procesarViaje como tipos de vehiculos que se quisiera agregar. 
+Se tendria que crear una función diferente para cada clase: procesarViajeBusArticulado(BusArticulado bus, double km), 
+procesarViajeTeleferico(Teleferico teleferico, double km).
+
+b.Si mañana se incorpora un TrenLigero con una nueva lógica de tarifa, ¿qué
+archivos o clases tendrías que modificar en el sistema de control (Fase 3)? 
+R// Solo se debe crear una nueva clase TrenLigero implementar los metodos de SistemaTarifario y en 
+CentralControl se crea la instancia y se usa igual que las otras
+
+c.¿Cuál es la diferencia fundamental en la intención entre la interfaz y las
+clases concretas? 
+R// La interfaz define qué se debe hacer, las clases concretas definen cómo se hace.
+La intención de una interfaz es definir un contrato o conjunto de métodos que una o varias clases deben implementar.
+La intención de una clase concreta es proporcionar una implementación completa de uno o varios comportamientos.
